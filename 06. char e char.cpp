@@ -6,7 +6,12 @@ using namespace std;
 
 int main(){
 		
-	char lettera;
+	char lettera='A'; //un singolo carattere -> 1 byte
+	cout<<lettera<<endl;
+	cout<<"char ->"<<sizeof(char)<<" byte"<<endl;
+	//un char non è altro che un numero nella tabella ASCII
+	cout<<(int)lettera<<endl;
+	
 	int ASCII;
 	cout<<"Inserisci un numero da 32 a 127 e ti diro' il corrispettivo ASCII \n\n";
 	cout<<"Da 65 a 90 si hanno le lettere MAIUSCOLE A-Z \n";
@@ -14,6 +19,7 @@ int main(){
 	cout<<"Gli altri valori sono simboli come ! < ; . : ] ecc.\n";
 	cin>>ASCII;
 	lettera=ASCII;
+
 	
 	cout<<"La il simbolo ASCII corrispondente e' \n\n";
 	cout<<lettera<<endl;
